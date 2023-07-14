@@ -130,3 +130,17 @@ figure{
   justify-content: center;
   margin-top: 12px;
 }
+
+/* QUOTES */
+
+#quotes{
+  background-color: #E7E5EB;
+}
+
+.quote__container{
+  margin: 0 120px;
+}
+
+.main__quote{
+  font-size: 36px;
+}
