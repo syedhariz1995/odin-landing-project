@@ -13,7 +13,7 @@
 
 .row{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -170,11 +170,13 @@ figure{
 .left__register h2{
   color: white;
   margin-bottom: 6px;
-
+  font-size: 32px;
 }
+
 .left__register h3{
   color: #E5E7EB;
   font-weight: 300;
+  font-size: 22px;
 }
 
 .right__register button{
