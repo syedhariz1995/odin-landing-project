@@ -159,4 +159,24 @@ figure{
 
 .register__container{
  background-color:  #3882F6;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 60px;
+ border-radius: 10px;
+}
+
+
+.left__register h2{
+  color: white;
+  margin-bottom: 6px;
+
+}
+.left__register h3{
+  color: #E5E7EB;
+  font-weight: 300;
+}
+
+.right__register button{
+  border: 3px white solid;
 }
