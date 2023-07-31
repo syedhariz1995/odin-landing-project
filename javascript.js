@@ -303,4 +303,22 @@
  */
 
 
+// Terniary operator   // (If condition true) ? (result if true) : (result if false)
 
+// let age = 25
+
+// let result = age >=25 ? "Time to start thinking" : "Nope"
+
+// console.log(result)
+
+
+
+//Multiple else in terniary
+
+// let age = prompt('age?',18);
+
+// let message = (age < 3) ? 'Hi, baby!' :
+//   (age < 18) ? 'Hello!' :
+//   (age < 100) ? 'Greetings!' :
+//   'What an unusual age!';1000
+// console.log( message );
