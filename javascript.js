@@ -322,3 +322,23 @@
 //   (age < 100) ? 'Greetings!' :
 //   'What an unusual age!';1000
 // console.log( message );
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+// Functions
+
