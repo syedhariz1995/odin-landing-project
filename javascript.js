@@ -409,3 +409,157 @@
 // showMessage();
 
 // console.log( userName ); // John, unchanged, the function did not access the outer variable
+
+
+
+
+// function showMessage(from, text) {
+
+//     from = '*' + from + '*'; // make "from" look nicer
+  
+//     console.log( from + ': ' + text );
+//   }
+  
+//   let from = "Ann";
+  
+//   showMessage(from, "Hello"); // *Ann*: Hello
+  
+//   // the value of "from" is the same, the function modified a local copy
+//   console.log( from ); // Ann
+
+
+
+
+
+// function add7(number){
+//     return number + 7
+// }
+
+// console.log(add7(7))
+
+
+
+
+
+// function multiply(num1,num2){
+//     return num1 * num2
+// }
+
+// console.log(multiply(7,7))
+
+
+
+
+
+// function captitalize(str){
+//     let lowered = str.toLowerCase()
+//     let strArray = lowered.split('')
+//     strArray[0] = strArray[0].toUpperCase('')
+//     return strArray.join('')
+// }
+
+// console.log(captitalize("HELLO"));
+// console.log(captitalize("wOrLd"));
+// console.log(captitalize("pRogRammers"));
+
+
+
+
+
+
+// function captitalizeArr(str){
+
+//        let lowered = str.toLowerCase()
+//        let strArray = lowered.split('')
+
+//        for(i = 0 ; i < strArray.length ; i++){
+//         if(i === 0){
+//             strArray[i]= strArray[i].toUpperCase();
+//         }
+//        }
+//        return strArray.join('')
+
+// }
+
+// console.log(captitalizeArr("HELLO"))
+// console.log(captitalizeArr("tHe"))
+// console.log(captitalizeArr("aS pEr ma emilAA"))
+
+
+
+
+
+// function lastLetter(str){
+//     return str[str.length - 1]
+// }
+
+// console.log(lastLetter("Hello"))
+// console.log(lastLetter("world"))
+// console.log(lastLetter("astronomy"))
+
+
+
+
+
+// function lastLetterSlice(str){
+//     return str.slice(-1)
+// }
+
+// console.log(lastLetterSlice("Hello"))
+// console.log(lastLetterSlice("world"))
+// console.log(lastLetterSlice("astronomy"))
+
+
+// const lastLetter = (str) => {
+//     return str.slice(-1)
+// }
+
+// console.log(lastLetter("hello"))
+
+
+
+// let ask =(question,yes,no) => {
+//     if(confirm(question)) {
+//         yes();
+//     }
+//     no();
+// }
+
+// ask("Do you agree?", function() {alert("You agreed")}, function(){alert("You disagree")})
+
+
+
+// let ask =(question,yes,no) => confirm(question) ? yes() : no()
+
+// ask("Do you agree?", function() {alert("You agreed")}, function(){alert("You disagree")})
+
+
+
+// const fizzBuzz = () => {
+//     const num = 100
+//     for(i = 0; i <= num; i++){
+//         if( i % 3 === 0){
+//             console.log(i + " Fizz")
+//         } else if( i % 5 === 0){
+//             console.log(i+ " Buzz")
+//         } else if ( i % 3 === 0 && i % 5 === 0 ){
+//             console.log(i+" FizzBuzz")
+//         }else{
+//             console.log(i)}
+//         }
+
+//     }
+
+// fizzBuzz()
+
+
+// const fizzBuzz = (num) => {
+//     num % 3 === 0 && num % 5 === 0 ? console.log(num + " FizzBuzz") : 
+//     num % 5 === 0 ? console.log(num + " Buzz") : 
+//     num % 3 === 0 ? console.log(num + " Fizz") : 
+//     console.log(num)
+// }
+
+// fizzBuzz(15)
+// fizzBuzz(5)
+// fizzBuzz(3)
