@@ -618,4 +618,11 @@
  * 
  */
 
+// .join() to join all array element and specify a separator in the brackets with double quote  eg. (" * ") , (" "), (" - ")
 
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// console.log(animals.join(" * ")) // cat * dog * hamster * crocodile
+// console.log(animals.join(" - ")) // cat - dog - hamster - crocodile
+// console.log(animals.join(" + ")) // cat + dog + hamster + crocodile
