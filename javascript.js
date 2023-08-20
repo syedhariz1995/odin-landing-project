@@ -822,6 +822,34 @@
 // console.log(animals.concat(fruits,tools)) // ['cat', 'dog', 'hamster', 'crocodile', 'apple', 'orange', 'banana', 'watermelon', 'hammer', 'screw', 'wrench', 'drill']
 
 
+// console.log(animals.concat("Oyen")) // Adds last element to last index, just like  .push()
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+// .flat() merge all sub arrays in array
+
+// const myArr = [[1,2],[3,4],[5,6]];
+// const newArr = myArr.flat();
+
+
+// console.log(myArr) // [Array(2), Array(2), Array(2)]  = 
+// console.log(newArr) // [1, 2, 3, 4, 5, 6]
+
+
+
 
 
 
@@ -837,3 +865,175 @@
 
 
 
+
+// .splice(index to start imsert, elements from previous index to remove, add any element here, additional element here)
+
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+// animals.splice(2, 0, "sheep", "rabbit");
+
+// console.log(animals) // ['cat', 'dog', 'sheep', 'rabbit', 'hamster', 'crocodile', 'fox', 'fish', 'deer', 'snake', 'lizard']
+
+// // starting index 2 ("hamster"), added "sheep" will be index 2, followed by "rabbit" in index 3,
+// // the 0 show how many elemnts to be deleted from said index. Since it's 0, none is deleted
+
+
+
+
+
+
+// if its 3 to be deleted
+
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+// animals.splice(2, 3, "sheep", "rabbit");
+
+// console.log(animals) // ['cat', 'dog', 'sheep', 'rabbit', 'fish', 'deer', 'snake', 'lizard']
+
+// // starting at index 2 "hamster" , followed by "crocodile" and "fox" , removed, 
+// // replaced with "sheep" in index 2 and "rabbit" in index 3.
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+// .slice(index to start (include), index to stop(exclude))  // to slice out pieces of array
+// NOTE : .slice() creates new array && didn't remove any elements that was excluded from source array.
+
+
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+
+// console.log(animals.slice(1,3)) // ["dog", "hamster"] // starting from index 1 ("dog") exclude index 3 (crocodile) and onwards
+
+
+
+
+// if only have starting index, it'll take the rest
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+
+// console.log(animals.slice(6)) // starting at index 6 ("deer") and onwards
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+// .sort() arrage array by alphabatical  
+// NOTE : .sort() is used for string only.
+// NOTE : for numbers, need to use .sort(function {a - b}) , example below
+
+
+// for string
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+
+// console.log(animals.sort())
+
+
+
+
+// for numbers (must be a function, including arrow function)
+// const num =  [90, 56, 23, 43, 35, 3, 10]
+
+// num.sort((a,b) => {
+//      return a - b;       // ascending order
+//     // return b - a     //for descending order
+// } )
+
+// console.log(num) // [3, 10, 23, 35, 43, 56, 90]
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+// .reverse() will reverse the order of array from last index to first index
+
+// const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
+
+// console.log(animals.reverse()) // ['lizard', 'snake', 'deer', 'fish', 'fox', 'crocodile', 'hamster', 'dog', 'cat']
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+function addNumber(a, b){
+    return a + b
+}
+
+console.log(addNumber("Helllo",8))
+
+
+
+
+
+
+
+const addTwoNums = (a,b) => {
+    return a + b
+}
+
+console.log(addTwoNums("Hello" , " World"))
