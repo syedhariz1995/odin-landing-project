@@ -580,10 +580,10 @@
  * 
  */
 
+/////////////// ARRAY //////////////
 
 
-
-// Arrays   // first element is index 0
+// first element is index 0
 
 // const cars = ["Proton", "Perodua", "Toyoya", "Nissan"]
 // cars[0] = "Ferrari"
@@ -600,7 +600,7 @@
  */
 
 
-// Array menthods
+// Array methods
 
 // .length     // Number of elements in array
 
@@ -618,83 +618,4 @@
  * 
  */
 
-
-// Accessing the first element and last element
-
-// const animals = ["cat", "dog", "hamster", "crocodile"]
-
-// console.log(animals[0]) // First element = cat
-// console.log(animals[animal.length - 1]) // Last element = crocodile
-
-
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- */
-
-
-
-
-//Loop through array with For-Loop
-
-// const animals = ["cat", "dog", "hamster", "crocodile"]
-
-// for(i = 0; i < animals.length; i++){
-//     console.log(animals[i])
-// }
-
-
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- */
-
-
-// use the .forEach method to loop
-
-// const animals = ["cat", "dog", "hamster", "crocodile"]
-
-// animals.forEach(e => {
-//     console.log(e)
-// })
-
-
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- */
-
-
-
-// Adding elements in array with .push
-
-// const animals = ["cat", "dog", "hamster", "crocodile"]
-// animals.push("snake") //pushed to last element
-
-// console.log(animals)
-
-
-// use Array.isArray(insert array variable here) to determine of its an array or not. typeof will show array as object instead
-
-// const animals = ["cat", "dog", "hamster", "crocodile"]
-// console.log (Array.isArray(animals)) // true
-// console.log (typeof animals) // object
-
-// const beast = {name: "Arashi", type: "cat"}
-// console.log(Array.isArray(beast)) // false cause this is an object
 
