@@ -683,6 +683,8 @@
  * 
  */
 
+
+
 // .push("element") adds new element to last index
 
 // const animals = ["cat", "dog", "hamster", "crocodile"]
@@ -690,3 +692,148 @@
 // animals.push("Oyen")
 
 // console.log(animals) //  ['cat', 'dog', 'hamster', 'crocodile', 'Oyen']
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+// .shift() removes first element of array, and "shifts" all elements to a lower index instead of making first elemnt null
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// animals.shift()
+
+// console.log(animals) //  ['dog', 'hamster', 'crocodile']
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+// .unshift("element") adds new first elements and "unshift" the rest of the elements forward
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// animals.unshift("eagle")
+
+// console.log(animals) // ['eagle', 'cat', 'dog', 'hamster', 'crocodile']
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+// array[index] use to change element
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// animals[0] = "Oyen"
+
+// console.log(animals) // ['Oyen', 'dog', 'hamster', 'crocodile'] // cat changed to Oyen
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+// delete array[index] will leave undefined/empty in the index chosen, unlike shift() and unshift()
+// Note : better use shift() or unshift(). 
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// delete animals[0]
+
+// console.log(animals) // [empty, 'dog', 'hamster', 'crocodile'] 
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+// arrayOne.concat(arrayTwo , arraythree)   // use for merging 2 (or more) arrays together
+
+
+// 2 arrays example
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+// const fruits = ["apple", "orange", "banana", "watermelon"]
+
+// console.log(animals.concat(fruits)) // ['cat', 'dog', 'hamster', 'crocodile', 'apple', 'orange', 'banana', 'watermelon']
+
+
+
+
+// 3 arrays example 
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+// const fruits = ["apple", "orange", "banana", "watermelon"]
+// const tools = ["hammer", "screw", "wrench", "drill"]
+
+// console.log(animals.concat(fruits,tools)) // ['cat', 'dog', 'hamster', 'crocodile', 'apple', 'orange', 'banana', 'watermelon', 'hammer', 'screw', 'wrench', 'drill']
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
