@@ -618,7 +618,9 @@
  * 
  */
 
+
 // .join() to join all array element and specify a separator in the brackets with double quote  eg. (" * ") , (" "), (" - ")
+//  Note, spaces applied too.
 
 
 // const animals = ["cat", "dog", "hamster", "crocodile"]
@@ -626,3 +628,65 @@
 // console.log(animals.join(" * ")) // cat * dog * hamster * crocodile
 // console.log(animals.join(" - ")) // cat - dog - hamster - crocodile
 // console.log(animals.join(" + ")) // cat + dog + hamster + crocodile
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+// toString() separate array with commas
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// console.log(animals.toString())  // cat,dog,hamster,crocodile
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+// .pop() removes last element of array 
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// animals.pop() // removes last element = crocodile
+
+// console.log(animals) // ["cat", "dog", "hamster"]  
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+// .push("element") adds new element to last index
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// animals.push("Oyen")
+
+// console.log(animals) //  ['cat', 'dog', 'hamster', 'crocodile', 'Oyen']
