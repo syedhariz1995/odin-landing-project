@@ -1021,7 +1021,7 @@
 // SPREAD OPERATOR AND REST OPERATOR
 
 
-// ...array 
+// ...array (syntax for both spread and rest)
 // NOTE : Spread operator : use to "unbox" the array in console.log with no commas
 
 // Spread operator example 1
@@ -1075,13 +1075,48 @@
 
 
 
+// Rest operator usually used in function argument, boxed it as an array instead of "unboxing" like spread
+// If we don't know how many arguments it'll take, there's where Rest Operator comes in
+
+// Rest Operator example 1 (Without rest operator)
+
+
+
+// function withoutRest(a,b,c){                // Only 3 arguments passed
+//     return a + b + c
+// }
+
+// console.log(withoutRest(3,1,6,0,9,4,7))     // Only first 3 will be passed, the rest ignored, thus , 3,1,6 will be passed
+
+
+
+
+// // Example 1 of rest operator  (single argument)
+
+// function withRest(...a){
+//     console.log(a)      // Array created by rest opertor in argument
+//     console.log(...a)   // apple ball cat dog elephant    // "unboxed" the array created (basically spread operator here)
+// }
+
+// withRest("apple","ball","cat","dog","elephant") // ['apple', 'ball', 'cat', 'dog', 'elephant']   // "boxed" as array
 
 
 
 
 
+// Example 2 of rest operator  (multiple arguments)
+// NOTE : the rest operator MUST BE THE LAST ARGUMENT if it's multiple arguments
 
 
+// function withRest(a, b, ...c){
+//     console.log(`The value of a is ${a}`) // The value of a is apple
+//     console.log(`The value of b is ${b}`) // The value of b is ball
+//     console.log(c) // ['cat', 'dog', 'elephant'] 
+//     console.log(...c) // cat dog elephant   // Spread operator here
+// }
+
+// withRest("apple","ball","cat","dog","elephant") // only the first 2 goes to a and b respectively
+//                                                 // "cat" and onwards "boxed" in an array under "...c"
 
 
 
