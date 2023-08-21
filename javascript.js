@@ -1018,13 +1018,19 @@
 //  */
 
 
+// SPREAD OPERATOR AND REST OPERATOR
 
 
-function addNumber(a, b){
-    return a + b
-}
+// ...array 
+// NOTE : Spread operator : use to "unbox" the array in console.log with no commas
 
-console.log(addNumber("Helllo",8))
+// Spread operator example 1
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// const tools = ["hammer", "screw", "drill", "ruler"]
+
+// console.log(...animals, ...tools) // cat dog hamster crocodile hammer screw drill ruler
 
 
 
@@ -1032,8 +1038,65 @@ console.log(addNumber("Helllo",8))
 
 
 
-const addTwoNums = (a,b) => {
-    return a + b
-}
+// NOTE : Spread Operator : can be used to merge two different arrays to one array
 
-console.log(addTwoNums("Hello" , " World"))
+// Spread operator example 2
+
+
+// const animals = ["cat", "dog", "hamster", "crocodile"]
+
+// const tools = ["hammer", "screw", "drill", "ruler"]
+
+// const animalTool = [...animals, ...tools] // put them both in the same box, by order
+
+// console.log(animalTool) // ['cat', 'dog', 'hamster', 'crocodile', 'hammer', 'screw', 'drill', 'ruler']
+
+
+
+
+
+
+
+// NOTE : Spread operator can be used to create new array (different name) with same element
+
+// Spread operator example 3
+
+// const animalsOutside = ["cat", "dog", "rabbit" , "hamster"]
+// const animalsinside = [...animalsOutside, "chicken"]  // Same element, but different array with new name, and can add on new elements
+
+// console.log(animalsinside) // ['cat', 'dog', 'rabbit', 'hamster', 'chicken']
+// console.log(...animalsinside) // cat dog rabbit hamster chicken   // "unbox" the array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const removeFromArray = function(array, ...args) {
+//     console.log(args)
+//     //   return array.filter(val => !args.includes(val))
+//     }
+// console.log(removeFromArray([1, 2, 3, 4], 3))
+
+
+
