@@ -1006,6 +1006,48 @@
 
 
 
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+// .filter()    // create new array by removing all elemnts by callback function returns falsy value
+// NOTE : USES CALLBACK, if element falsy, it'll be remove, else, keep the element
+
+
+//EG 1
+// const num = [1,2,3,4,5,6]
+
+// const even = num.filter(element => element % 2 === 0)
+// const odd = num.filter(element => element % 2 !== 0)
+
+// console.log(even)  // [2, 4, 6]
+// console.log(odd)  // [1, 3, 5]
+
+
+
+
+// EG 2 : Can be use to remove duplicates (with .indexOf())
+// NOTE : under callback function, the syntax by order is (ELEMENT, INDEX, ARRAY)
+
+// const num = [1,2,3,2,1,3,3,5,4,6]
+
+// const removeDupes = num.filter((element, index, array) => {
+//     return array.indexOf(element) === index
+// })
+
+// console.log(removeDupes)
+
+
+
+
+
+
 
 
 // /**
@@ -1127,11 +1169,18 @@
 
 
 
-// const removeFromArray = function(array, ...args) {
-//     console.log(args)
-//     //   return array.filter(val => !args.includes(val))
+// const removeFromArray = function(array, ...toRemove) {
+//       return array.filter(element => !toRemove.includes(element))
 //     }
 // console.log(removeFromArray([1, 2, 3, 4], 3))
 
 
+
+
+
+const testArr = (arr) => {
+    return arr.filter(element => element === 3)
+}
+
+console.log(testArr([1,2,3,4]))
 
