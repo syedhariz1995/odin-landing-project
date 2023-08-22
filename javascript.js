@@ -1167,7 +1167,9 @@
 
 
 
+// Exercise from TOP
 
+// Exercise 1
 
 // const removeFromArray = function(array, ...toRemove) {
 //       return array.filter(element => !toRemove.includes(element))
@@ -1176,11 +1178,57 @@
 
 
 
+// Exercise 2
+
+// const sumAll = function(start, end) {
+//     let sum = 0
+
+//     if(start < 0 || end < 0 || typeof start !== "number" || typeof end !== "number") return 'ERROR'
+    
+
+//     if(start > end){
+//         let temp = start
+//         start = end
+//         end = temp
+
+//         console.log(start, end)
+//     }
 
 
-const testArr = (arr) => {
-    return arr.filter(element => element === 3)
-}
+//     for(i = start; i <= end; i++){
+//         sum+= start
+//         start++
+//     }
+//     return sum
+    
+// };
 
-console.log(testArr([1,2,3,4]))
+// console.log(sumAll(900,23))
 
+
+
+
+// Exercise 3
+
+// const leapYears = function(year) {
+//     if(year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)){
+//         return true
+//     }
+//     return false
+// };
+
+// console.log(leapYears(1996)) //true
+// console.log(leapYears(1997)) // false
+// console.log(leapYears(34992)) // true
+// console.log(leapYears(1900)) // false
+// console.log(leapYears(1600)) // true
+// console.log(leapYears(700)) // false
+
+
+
+
+
+// year % 4 === 0   is leap year
+
+// year % 100 !== 0  are not leap year unless its year % 400 === 0
+ 
