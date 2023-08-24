@@ -1382,3 +1382,92 @@
 
 
 // console.log(container) 
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+// styling elements using .style.cssAttributes = "css value" // syntax : variable.style.anyCSSAttributes(eg color, font size, etc) = "set values here like 2px or red"
+// NOTE : css attribute in css has a dash (eg font-size), but in javascript, it's camelCase (eg fontSize)
+
+// const title = document.querySelector('#main-heading')
+
+// title.style.color = 'red'
+// title.style.fontSize = '70px'
+
+// console.log(title)  // Inline styling created via DOM :   <h1 id="main-heading" style="color:red; font-size: 70px">Favorite Movie Franchise</h1>
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+// But selecting more than one elements, it won't work to be an  inline styling, need to loop it
+
+// const listItems = document.querySelectorAll('.list-items')
+
+// //Not working example
+// //listItems.styles.fontSize = '2rem' // This won't work. Need to loop through the list first
+
+
+
+// // Working example
+// // for(i = 0; i < listItems.length ; i++){
+// //     listItems[i].style.fontSize = '5rem'         // This works
+// // }
+
+// console.log(listItems)
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// Create elements 
+
+const ul = document.querySelector('ul')
+const li = document.createElement('li')
+
+// Adding elemnts using .append
+
+ul.append(li)           // Adding li under ul
+
+
+// Modifying the text
+
+const firstListItem = document.querySelector('.list-items')  // Selects the first list, "Neo The Matrix"
+
+console.log(firstListItem.innerText)    // Shows the text inside : Neo The Matrix
+
+
+console.log(firstListItem.textContent)  // Shows EXACTLY how it is in HTML (moved in HTML, it'll move too)
+                                        // Neo
+                                        // The Matrix    
+
+
+console.log(firstListItem.innerHTML)    // Shows what's inside the tag, including tags within the selected tags
+                                        // <span>Neo </span>
+                                        // The Matrix
