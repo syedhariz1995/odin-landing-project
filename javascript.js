@@ -1289,41 +1289,29 @@
 
 
 
-// DOM - Document Object Model
+// DOM - Document Object Model      
+// NOTE : This notes and exercises are from FreeCodeCamp : https://www.youtube.com/watch?v=5fb2aPlgoys&ab_channel=freeCodeCamp.org
 // NOTE : this is the html for practice in index.html near the bottom
 
 {/* <div id="container">
-    <div class="display"></div>
-    <div class="controls"></div>
-</div> */}
-
-// use to manipulate the page using JavaScript
-
-// Target nodes with selector 
-
-// example : 
-
-// const container = document.querySelector('#container') // selects the #container div 
-
-// console.dir(container.firstElementChild);  // selects the first child of #container => .display                    
-
-// const controls = document.querySelector('.controls');  // selects the .controls div
-
-// console.dir(controls.previousElementSibling); // selects the prior sibling => .display
+       <h1 id="main-heading">Favorite Movie Franchise</h1>
+       <ul>
+        <li class="list-items">The Matrix</li>
+        <li class="list-items">Star Wars</li>
+        <li class="list-items">Harry Potter</li>
+        <li class="list-items">Lord of The Rings</li>
+        <li class="list-items">Marvel</li>
+       </ul>
+    </div> */}
 
 
 
-// Another note : 
-
-// element.querySelector(selector)   // returns a reference to the first match of selector
-
-// element.querySelectorAll(selectors) //  returns a “nodelist” containing references to all of the matches of the selectors
+// DOM manipulation 
+// Different ways to select elements
 
 
+// getElementById()
 
+const title = document.getElementById('main-heading')
 
-
-
-// Create element
-
-// const div = document.createElement('div'); 
+console.log(title)     // <h1 id="main-heading">Favorite Movie Franchise</h1>
