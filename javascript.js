@@ -1443,51 +1443,51 @@
 
 
 
-// BIG EXAMPLE BELOW
+// BIG EXAMPLE STARTS (uncomment what's relevant to understand the steps)
 
 
-// Create elements 
-// NOTE: Attribute is the thing set in HTML tag. Like class, id, style (inline), etc
+// // Create elements 
+// // NOTE: Attribute is the thing set in HTML tag. Like class, id, style (inline), etc
 
-const ul = document.querySelector('ul')
-const li = document.createElement('li')
+// const ul = document.querySelector('ul')
+// const li = document.createElement('li')
 
-// Adding elemnts using .append
-ul.append(li)           // Adding li under ul
-
-
-// Modifying the text
-li.innerText = 'Spider-Man'  // Text will be included under list
+// // Adding elemnts using .append
+// ul.append(li)           // Adding li under ul
 
 
-// Modifying Attributes & Classes  // syntax : variable.setAttribute('id / class / any attributes , 'id name / class name / any attribute properties')
-li.setAttribute('id', 'main-heading')  // id is set as "main-heading, thus following anything h1's css did. 
-li.setAttribute('style', 'color:red')  // added style as sttribute, with color set to red
+// // Modifying the text
+// li.innerText = 'Spider-Man'  // Text will be included under list
 
 
-// Remove attributes  // syntax : variable.removeAttribute('attribute name like id or class')
-li.removeAttribute('id')  // id atribute remmoved
-li.removeAttribute('style')  // style attribute removed, color is not red anymore
+// // Modifying Attributes & Classes  // syntax : variable.setAttribute('id / class / any attributes , 'id name / class name / any attribute properties')
+// li.setAttribute('id', 'main-heading')  // id is set as "main-heading, thus following anything h1's css did. 
+// li.setAttribute('style', 'color:red')  // added style as sttribute, with color set to red
 
 
-// Access attributes        // syntax : variable.getAttribute('attribute name like id, or class, etc')
-
-const title = document.querySelector('#main-heading')
-
-console.log(title.getAttribute('id'))   //  main-heading
+// // Remove attributes  // syntax : variable.removeAttribute('attribute name like id or class')
+// li.removeAttribute('id')  // id atribute remmoved
+// li.removeAttribute('style')  // style attribute removed, color is not red anymore
 
 
+// // Access attributes        // syntax : variable.getAttribute('attribute name like id, or class, etc')
 
-// Using classList (.add, .remove , .contains)
-// NOTE : Many more methods under classList, but learn  this first
-li.classList.add('list-items')     // classList.add('class name')    // will follow any styling done to that class name in css
-li.classList.remove('list-items')     // classList.remove('class name')     // removes class name and any css styles with it.
-console.log(li.classList.contains('list-items'))  // classList.contains('class name') to check if its true or false. 
-                                                  // In this case, false, since it was removed
+// const title = document.querySelector('#main-heading')
+
+// console.log(title.getAttribute('id'))   //  main-heading
 
 
-// Remove element   
-li.remove()     // won't appear anymore since it's been removed
+
+// // Using classList (.add, .remove , .contains)
+// // NOTE : Many more methods under classList, but learn  this first
+// li.classList.add('list-items')     // classList.add('class name')    // will follow any styling done to that class name in css
+// li.classList.remove('list-items')     // classList.remove('class name')     // removes class name and any css styles with it.
+// console.log(li.classList.contains('list-items'))  // classList.contains('class name') to check if its true or false. 
+//                                                   // In this case, false, since it was removed
+
+
+// // Remove element   
+// li.remove()     // won't appear anymore since it's been removed
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1514,3 +1514,22 @@ li.remove()     // won't appear anymore since it's been removed
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+// BIG EXAMPLE ENDS
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// Navigate / Traverse the DOM 
+
+// Parent Node Traversal
