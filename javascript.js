@@ -1443,31 +1443,74 @@
 
 
 
-
+// BIG EXAMPLE BELOW
 
 
 // Create elements 
+// NOTE: Attribute is the thing set in HTML tag. Like class, id, style (inline), etc
 
 const ul = document.querySelector('ul')
 const li = document.createElement('li')
 
 // Adding elemnts using .append
-
 ul.append(li)           // Adding li under ul
 
 
 // Modifying the text
-
-const firstListItem = document.querySelector('.list-items')  // Selects the first list, "Neo The Matrix"
-
-console.log(firstListItem.innerText)    // Shows the text inside : Neo The Matrix
+li.innerText = 'Spider-Man'  // Text will be included under list
 
 
-console.log(firstListItem.textContent)  // Shows EXACTLY how it is in HTML (moved in HTML, it'll move too)
-                                        // Neo
-                                        // The Matrix    
+// Modifying Attributes & Classes  // syntax : variable.setAttribute('id / class / any attributes , 'id name / class name / any attribute properties')
+li.setAttribute('id', 'main-heading')  // id is set as "main-heading, thus following anything h1's css did. 
+li.setAttribute('style', 'color:red')  // added style as sttribute, with color set to red
 
 
-console.log(firstListItem.innerHTML)    // Shows what's inside the tag, including tags within the selected tags
-                                        // <span>Neo </span>
-                                        // The Matrix
+// Remove attributes  // syntax : variable.removeAttribute('attribute name like id or class')
+li.removeAttribute('id')  // id atribute remmoved
+li.removeAttribute('style')  // style attribute removed, color is not red anymore
+
+
+// Access attributes        // syntax : variable.getAttribute('attribute name like id, or class, etc')
+
+const title = document.querySelector('#main-heading')
+
+console.log(title.getAttribute('id'))   //  main-heading
+
+
+
+// Using classList (.add, .remove , .contains)
+// NOTE : Many more methods under classList, but learn  this first
+li.classList.add('list-items')     // classList.add('class name')    // will follow any styling done to that class name in css
+li.classList.remove('list-items')     // classList.remove('class name')     // removes class name and any css styles with it.
+console.log(li.classList.contains('list-items'))  // classList.contains('class name') to check if its true or false. 
+                                                  // In this case, false, since it was removed
+
+
+// Remove element   
+li.remove()     // won't appear anymore since it's been removed
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Extra Note : Access the inner contents 
+// NOTE : Better use innerText than innerHTML. Security reasons 
+
+// const firstListItem = document.querySelector('.list-items')  // Selects the first list, "Neo The Matrix"
+
+// console.log(firstListItem.innerText)    // Shows the text inside : Neo The Matrix
+
+
+// console.log(firstListItem.textContent)  // Shows EXACTLY how it is in HTML (moved in HTML, it'll move too)
+//                                         // Neo
+//                                         // The Matrix    
+
+
+// console.log(firstListItem.innerHTML)    // Shows what's inside the tag, including tags within the selected tags
+//                                         // <span>Neo </span>
+//                                         // The Matrix
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
