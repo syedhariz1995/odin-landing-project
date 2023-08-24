@@ -1310,8 +1310,75 @@
 // Different ways to select elements
 
 
-// getElementById()
+// getElementById()     // Used for id only
 
-const title = document.getElementById('main-heading')
+// const title = document.getElementById('main-heading')
 
-console.log(title)     // <h1 id="main-heading">Favorite Movie Franchise</h1>
+// console.log(title)     // <h1 id="main-heading">Favorite Movie Franchise</h1>
+
+
+
+//
+//
+
+
+// getElementbyClassName()      // Used for class name only
+
+// const listItem = document.getElementsByClassName('list-items')
+
+// console.log(listItem)    // HTMLCollection(5) [li.list-items, li.list-items, li.list-items, li.list-items, li.list-items]
+
+
+
+
+//
+//
+
+
+
+// getElementByTagName()   // refers to HTML tag name such as "div", "li" , "ul" , etc
+
+// const listItems = document.getElementsByTagName('li')
+
+// console.log(listItems)    // HTMLCollection(5) [li.list-items, li.list-items, li.list-items, li.list-items, li.list-items]
+
+
+
+
+//
+//
+
+
+
+// querySelector()      // Can select tag, class, id (any element) 
+// but if there's multiple same class nme, Id names, or tag names, it'll select the first one it comes across.
+// NOTE : if it's class, use the dot before class name (eg .container , .list-items)
+// NOTE : if its ID, use # nefore ID name (eg #container ,  #list-items)
+
+// const container = document.querySelector('.list-items')    // Class select :  <li class = "list-items">The Matrix</li>   // Only first item it comes across
+// const container = document.querySelector('#main-heading')    //  ID select : h1#min-heading
+// const container = document.querySelector('div')    //  Tag select : <div id="container">...</div>
+
+// console.log(container) 
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+// querySelectorAll ()      // Used to select all classname, ID, or tag name available, unlike querySelector() which selects only the 1st one they came across
+
+
+// const container = document.querySelectorAll('.list-items')    // Class select :  NodeList(10) [li.list-items, li.list-items, li.list-items, li.list-items, li.list-items, li.list-items, li.list-items, li.list-items, li.list-items, li.list-items]
+// const container = document.querySelectorAll('#main-heading')    //  ID select : NodeList(2) [h1#main-heading, h1#main-heading]   // NOTE : this is just example. IDs need to be different for diffent elements
+// const container = document.querySelectorAll('div')    //  Tag select : NodeList(2) [div#container, div#container]
+
+
+// console.log(container) 
