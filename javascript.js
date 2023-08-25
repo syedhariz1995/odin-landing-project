@@ -1480,6 +1480,7 @@
 
 // // Using classList (.add, .remove , .contains)
 // // NOTE : Many more methods under classList, but learn  this first
+
 // li.classList.add('list-items')     // classList.add('class name')    // will follow any styling done to that class name in css
 // li.classList.remove('list-items')     // classList.remove('class name')     // removes class name and any css styles with it.
 // console.log(li.classList.contains('list-items'))  // classList.contains('class name') to check if its true or false. 
@@ -1636,4 +1637,40 @@
 
 
 
-// Event listener
+// Exercise from TOP
+
+// const body = document.querySelector('body')
+
+// const p = document.createElement('p')
+// body.append(p)
+// p.innerText = `Hey I'm red!`
+// p.style.color = 'red'
+
+// const h3 = document.createElement('h3')
+// body.append(h3)
+// h3.innerText = `I'm a blue h3!`
+// h3.style.color = 'blue'
+
+// const div = document.createElement('div')
+// body.append(div)
+// div.style.border = '1px solid black'
+// div.style.backgroundColor = 'pink'
+
+// const divH1 = document.createElement('h1')
+// const divP = document.createElement('p')
+// div.append(divH1, divP)
+// divH1.innerText = `I'm in a div!`
+// divP.innerText = `ME TOO!`
+
+// console.log(body)
+
+// const h4 = document.createElement('h4')
+
+// body.append(h4)
+
+// h4.innerText = 'Just a h4. Nothing special'
+// h4.setAttribute('class', 'item-list')
+// h4.removeAttribute('class', 'item-list')
+// h4.classList.add('hello')
+// h4.classList.remove('hello')
+// console.log(h4)
