@@ -1533,8 +1533,8 @@
 // Navigate / Traverse the DOM 
 
 // Parent Node Traversal
-// NOTE : parentNode will take any parent above the targetted child
-// NOTE : parentElement will take specific node directly above the targetted child.
+// NOTE : parentNode will take any parent above the targetted child, regardless it being an element or not
+// NOTE : parentElement will take specific element node directly above the targetted child.
 
 
 // let ul = document.querySelector('ul')
@@ -1553,3 +1553,50 @@
 
 // console.log(html.parentNode) // #document      // Still retrieved any parent node, in this case, the document node is above the html node.
 // console.log(html.parentElement) // null        // Cause HTML node and Document node aren't the same 
+
+
+
+
+
+//
+//
+
+
+
+
+// Child node Traversal
+
+let ul = document.querySelector('ul')
+
+console.log(ul.childNodes) // NodeList(11) [text, li.list-items, text, li.list-items, text, li.list-items, text, li.list-items, text, li.list-items, text]
+                           // NOTE : Indentation matter. If the last list is the same line as 2nd last, the NodeList length will be 10 instead of 11
+                           // NOTE : text is one node (text node), li.list-items is one node (li is element node)
+
+console.log(ul.firstChild) // #text  // referring to ul.childNodes , text was the first node that came out
+console.log(ul.lastChild)  // #text  // referring to ul.childNodes , same
+
+
+// ul.childNodes.style.backgroundColor = 'blue'     // This won't work. Check the array. 
+ul.childNodes[1].style.backgroundColor = 'blue'     // This works under ul.childNodes
+
+
+console.log(ul.children) // HTMLCollection(5) [li.list-items, li.list-items, li.list-items, li.list-items, li.list-items]
+                         // NOTE : text not included, targets elements
+
+console.log(ul.firstElementChild)   // <li class = "list-items"><span>Neo </span>The Matrix</li>   // inline style added if you uncomment the blue background earlier
+console.log(ul.lastElementChild)    // <li class = "list-items">Marvel</li>
+
+// NOTE : firstElementChild takes the first specific element, same goes for lastElementchild takes last specific element
+
+
+
+
+
+
+//
+//
+
+
+
+
+
