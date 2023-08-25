@@ -1565,6 +1565,7 @@
 
 
 // Child node Traversal
+// NOTE : #text is the white space, tabs, line breaks between nodes
 
 // let ul = document.querySelector('ul')
 
@@ -1572,8 +1573,8 @@
 //                            // NOTE : Indentation matter. If the last list is the same line as 2nd last, the NodeList length will be 10 instead of 11
 //                            // NOTE : text is one node (text node), li.list-items is one node (li is element node)
 
-// console.log(ul.firstChild) // #text  // referring to ul.childNodes , text was the first node that came out
-// console.log(ul.lastChild)  // #text  // referring to ul.childNodes , same
+// console.log(ul.firstChild) // #text  // referring to ul.childNodes 
+// console.log(ul.lastChild)  // #text  // referring to ul.childNodes
 
 
 // // ul.childNodes.style.backgroundColor = 'blue'     // This won't work. Check the array. 
@@ -1600,3 +1601,20 @@
 
 
 
+// Sibling node traversal
+// NOTE : Comments in HTML are included as a node.
+// NOTE : #text are basically the white space in between nodes
+
+let ul = document.querySelector('ul')
+const div = document.querySelector('div')
+
+console.log(div.childNodes)  // NodeList(7) [text, h1#main-heading.test, text, comment, text, ul, text]
+
+console.log(ul.previousSibling) // #text, refer to above array
+console.log(ul.nextSibling)    // #text, refer to above array
+
+
+console.log(ul.previousElementSibling)    // <h1 id="main-heading" class="test">Favorite Movie Franchise</h1>
+                                          // ul's previous element under div is h1
+
+console.log(ul.nextElementSibling)    // null   // Because after ul, there's no more element unless added
