@@ -1603,18 +1603,37 @@
 
 // Sibling node traversal
 // NOTE : Comments in HTML are included as a node.
-// NOTE : #text are basically the white space in between nodes
+// NOTE : #text are basically the white space , line breaks between nodes
 
-let ul = document.querySelector('ul')
-const div = document.querySelector('div')
+// let ul = document.querySelector('ul')
+// const div = document.querySelector('div')
 
-console.log(div.childNodes)  // NodeList(7) [text, h1#main-heading.test, text, comment, text, ul, text]
+// console.log(div.childNodes)  // NodeList(7) [text, h1#main-heading.test, text, comment, text, ul, text]
 
-console.log(ul.previousSibling) // #text, refer to above array
-console.log(ul.nextSibling)    // #text, refer to above array
+// console.log(ul.previousSibling) // #text, refer to above array, check the ul and see what's previous
+// console.log(ul.nextSibling)    // #text, refer to above array, check the ul and see what's next
 
 
-console.log(ul.previousElementSibling)    // <h1 id="main-heading" class="test">Favorite Movie Franchise</h1>
-                                          // ul's previous element under div is h1
+// console.log(ul.previousElementSibling)    // <h1 id="main-heading" class="test">Favorite Movie Franchise</h1>
+//                                           // ul's previous element under div is h1
 
-console.log(ul.nextElementSibling)    // null   // Because after ul, there's no more element unless added
+// console.log(ul.nextElementSibling)    // null   // Because after ul, there's no more element unless added
+
+
+
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// Event listener
