@@ -1501,7 +1501,7 @@
 // console.log(firstListItem.innerText)    // Shows the text inside : Neo The Matrix
 
 
-// console.log(firstListItem.textContent)  // Shows EXACTLY how it is in HTML (moved in HTML, it'll move too)
+// console.log(firstListItem.textContent)  // Shows EXACTLY how it is in HTML (move in HTML, it'll move too)
 //                                         // Neo
 //                                         // The Matrix    
 
@@ -1533,3 +1533,23 @@
 // Navigate / Traverse the DOM 
 
 // Parent Node Traversal
+// NOTE : parentNode will take any parent above the targetted child
+// NOTE : parentElement will take specific node directly above the targetted child.
+
+
+// let ul = document.querySelector('ul')
+
+// console.log(ul.parentNode)   // <div id="container"> ... </div>
+// console.log(ul.parentElement)   // <div id="container"> ... </div>
+
+
+// // Get grandparent node
+// console.log(ul.parentElement.parentElement)   // <body>...</body>
+// console.log(ul.parentElement.parentElement)   // <body>...</body>
+
+
+
+// const html = document.documentElement;
+
+// console.log(html.parentNode) // #document      // Still retrieved any parent node, in this case, the document node is above the html node.
+// console.log(html.parentElement) // null        // Cause HTML node and Document node aren't the same 
