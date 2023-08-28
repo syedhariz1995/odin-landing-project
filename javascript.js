@@ -1674,3 +1674,119 @@
 // h4.classList.add('hello')
 // h4.classList.remove('hello')
 // console.log(h4)
+
+
+
+
+
+//
+//
+
+
+
+
+
+// Events in JavaScript   
+// Method 1 i HTML
+
+// Method 2 (refer HTML) 
+
+// const btn = document.getElementById('btn')
+
+// btn.onclick = () => alert('Hello World')
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+// Method 3 , use .addEventListener
+// NOTE the syntax is   :   variable.addEventListener('event here like click or hover', () => {do something here})
+
+// const btn = document.getElementById('btn')
+
+// btn.addEventListener('click', () => {
+//     alert("Hello world 2!")
+// })
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+// Method 4, called from HTML, create a function with the same name as the onclick
+
+
+// if onclick under HTML tag already has the function name, can use this
+// function sayHello(){
+//     alert("Helloooooo")
+// }
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// Method 5 : getElementById first, create a function after, then make the onclick = functionName()
+
+// const btn = document.getElementById('btn')
+
+// function sayHello(){
+//     alert("hey hey heeeey")
+// }
+
+
+// btn.onclick = sayHello      // NOTE : do not put the () after function name if want to use this method
+
+
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// Method 6 : use addEventListener, but call a function that was created earlier instead of making it a function inside
+
+// const btn = document.getElementById('btn')
+
+// // Created this first
+// function sayHello(){
+//     alert("wazzuuuuuuuuupp")
+// }
+
+
+// // Call it inside
+// btn.addEventListener('click', sayHello)         // NOTE : again, dont use () after function name in this method
