@@ -1790,3 +1790,73 @@
 
 // // Call it inside
 // btn.addEventListener('click', sayHello)         // NOTE : again, dont use () after function name in this method
+
+
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+// The 'e' inside parameter shows all the details of the event (eg if event is "click", it tells you what happeened, where it happened, etc)
+
+// const btn = document.getElementById('btn')
+
+// // Details of event
+// btn.addEventListener('click', function (e) {
+//    console.log(e);
+// });
+
+
+// // Once e is console.logged , can see the properties of the events, such as target, layerX, etc. e.propertyName to access the detail
+
+
+// // the .target refers to the element tag itself, in this case , the <button> in HTML
+// btn.addEventListener('click', function (e) {
+//    console.log(e.target);
+// });
+
+
+// // Because .target is the HTNL element, can access the style property, and access css properties
+
+// btn.addEventListener('click', function (e) {
+//     e.target.style.background = "yellow"
+//     e.target.style.color = "black"
+// });
+ 
+
+
+
+
+
+
+
+
+//
+//
+
+
+
+
+
+
+
+// using querySelectorAll('selector')
+// NOTE : use .forEach , then addEventListerner within it
+
+const buttons = document.querySelectorAll('button')
+
+// Use forEach method to iterate each buttons
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(button.id)
+    })
+})
