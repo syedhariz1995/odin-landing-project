@@ -1852,11 +1852,17 @@
 // using querySelectorAll('selector')
 // NOTE : use .forEach , then addEventListerner within it
 
-const buttons = document.querySelectorAll('button')
+// const buttons = document.querySelectorAll('button')
 
-// Use forEach method to iterate each buttons
-buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-        console.log(button.id)
-    })
-})
+// // Use forEach method to iterate each buttons
+// buttons.forEach((button) => {
+//     button.addEventListener('click', () => {
+//         console.log(button.id)
+//     })
+// })
+
+
+
+
+
+// NOTE : common useful events : click, dblclick, keydown, keyup
