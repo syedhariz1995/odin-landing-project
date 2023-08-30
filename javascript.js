@@ -1866,3 +1866,20 @@
 
 
 // NOTE : common useful events : click, dblclick, keydown, keyup
+
+
+
+
+
+
+
+
+// const para = document.getElementById('keyboard')
+
+
+// para.addEventListener('keypress', (event) => {
+//     console.log(event.key)
+//     console.log(event.code)
+// })
+
+
