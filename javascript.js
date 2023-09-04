@@ -1849,8 +1849,8 @@
 
 
 
-// using querySelectorAll('selector')
-// NOTE : use .forEach , then addEventListerner within it
+// // using querySelectorAll('selector')
+// // NOTE : use .forEach , then addEventListerner within it
 
 // const buttons = document.querySelectorAll('button')
 
