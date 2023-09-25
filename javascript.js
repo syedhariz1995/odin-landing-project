@@ -7,6 +7,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -15,6 +23,12 @@
  * 
  * 
  */
+
+
+
+
+
+
 
 
 
@@ -27,6 +41,14 @@
 // console.log(typeof converNum)    // Number
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -35,6 +57,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 
@@ -45,6 +75,14 @@
 // console.log(length) // 26
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -53,6 +91,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 
@@ -84,6 +129,14 @@
 // console.log(part)
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -92,6 +145,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 
@@ -103,6 +163,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -111,6 +179,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 // .replace("first match", "changed")    // Replace string  // Also case sensitive   
 // use /word/g for global, and /word/i for insensitive case
@@ -120,6 +196,14 @@
 // console.log(newText) // "Please visit W3Schools"
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -128,6 +212,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 // .toUpperCase() and .toLowerCase()   // Convert lower case string to upper case and vice versa
@@ -145,6 +236,14 @@
 // console.log(text2) //"hello world!"
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -153,6 +252,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 
@@ -166,6 +273,14 @@
 //Note : trimStart() and trimEnd() exist. Both removes white space from start of string or end of string respectively.
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -174,6 +289,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 // .charAt(string index)    // To show specific character based on index
@@ -192,6 +314,14 @@
 // console.log(char)
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -200,6 +330,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 // .split("")    // Split for each character
@@ -212,6 +349,14 @@
 // console.log(char) // ["HELLO", "WORLD"]
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -220,6 +365,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 
@@ -238,6 +390,14 @@
 // console.log(index); // 21
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -246,6 +406,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 // .search()     // More versatile to search index, but no 2nd parameter
 
@@ -256,6 +424,14 @@
 // console.log(textIndex) // 7
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -264,6 +440,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 // .match("word")    // look for a match in string, returns the index
 
@@ -273,6 +456,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -281,6 +472,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 // .includes("word", starting index)   // Returns true (or false) if string contains specific value.
@@ -293,6 +492,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -301,6 +508,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 // Terniary operator   // (If condition true) ? (result if true) : (result if false)
@@ -330,6 +545,13 @@
 
 
 
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -338,6 +560,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 // Functions
@@ -360,7 +589,28 @@
 
 
 
-// Outer Variable 
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+
+// Outer Variable (Global) 
 
 // let userName = 'John';
 
@@ -374,7 +624,29 @@
 
 
 
-// Can also effect outer variable
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+// // Can also effect global variable
 
 // let userName = 'John';
 
@@ -390,6 +662,29 @@
 // showMessage();
 
 // console.log( userName ); // Bob, the value was modified by the function
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -413,6 +708,29 @@
 
 
 
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
 // function showMessage(from, text) {
 
 //     from = '*' + from + '*'; // make "from" look nicer
@@ -431,11 +749,53 @@
 
 
 
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 // function add7(number){
 //     return number + 7
 // }
 
 // console.log(add7(7))
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -451,6 +811,28 @@
 
 
 
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
 // function captitalize(str){
 //     let lowered = str.toLowerCase()
 //     let strArray = lowered.split('')
@@ -461,6 +843,29 @@
 // console.log(captitalize("HELLO"));
 // console.log(captitalize("wOrLd"));
 // console.log(captitalize("pRogRammers"));
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
 
 
 
@@ -489,6 +894,29 @@
 
 
 
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+
 // function lastLetter(str){
 //     return str[str.length - 1]
 // }
@@ -496,6 +924,29 @@
 // console.log(lastLetter("Hello"))
 // console.log(lastLetter("world"))
 // console.log(lastLetter("astronomy"))
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -518,6 +969,29 @@
 
 
 
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
 // let ask =(question,yes,no) => {
 //     if(confirm(question)) {
 //         yes();
@@ -532,6 +1006,29 @@
 // let ask =(question,yes,no) => confirm(question) ? yes() : no()
 
 // ask("Do you agree?", function() {alert("You agreed")}, function(){alert("You disagree")})
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
 
 
 
@@ -571,6 +1068,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -579,6 +1084,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 /////////////// ARRAY //////////////
 
@@ -590,6 +1103,14 @@
 
 // console.log(cars)
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -598,6 +1119,13 @@
  * 
  * 
  */
+
+
+
+
+
+
+
 
 
 // Array methods
@@ -609,6 +1137,14 @@
 // console.log(animal.length) // 4
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -617,6 +1153,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 // .join() to join all array element and specify a separator in the brackets with double quote  eg. (" * ") , (" "), (" - ")
@@ -632,6 +1176,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -640,6 +1192,12 @@
  * 
  * 
  */
+
+
+
+
+
+
 
 
 // toString() separate array with commas
@@ -652,6 +1210,13 @@
 
 
 
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -660,6 +1225,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 
@@ -674,6 +1247,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -682,6 +1263,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 
@@ -695,6 +1284,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /**
  * 
  * 
@@ -703,6 +1300,14 @@
  * 
  * 
  */
+
+
+
+
+
+
+
+
 
 
 // .shift() removes first element of array, and "shifts" all elements to a lower index instead of making first elemnt null
@@ -717,14 +1322,29 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -741,14 +1361,30 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 
@@ -765,14 +1401,28 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -789,14 +1439,30 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 
@@ -809,6 +1475,29 @@
 // const fruits = ["apple", "orange", "banana", "watermelon"]
 
 // console.log(animals.concat(fruits)) // ['cat', 'dog', 'hamster', 'crocodile', 'apple', 'orange', 'banana', 'watermelon']
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -828,14 +1517,30 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 
@@ -853,14 +1558,29 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -875,6 +1595,29 @@
 
 // // starting index 2 ("hamster"), added "sheep" will be index 2, followed by "rabbit" in index 3,
 // // the 0 show how many elemnts to be deleted from said index. Since it's 0, none is deleted
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
 
 
 
@@ -899,14 +1642,29 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -940,14 +1698,25 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 
@@ -961,6 +1730,29 @@
 // const animals = ["cat", "dog", "hamster", "crocodile", "fox", "fish" , "deer", "snake", "lizard"]
 
 // console.log(animals.sort())
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
 
 
 
@@ -979,14 +1771,29 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -1006,14 +1813,27 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 // .filter()    // create new array by removing all elemnts by callback function returns falsy value
@@ -1028,6 +1848,29 @@
 
 // console.log(even)  // [2, 4, 6]
 // console.log(odd)  // [1, 3, 5]
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -1050,14 +1893,30 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
 
 
 // SPREAD OPERATOR AND REST OPERATOR
@@ -1073,6 +1932,29 @@
 // const tools = ["hammer", "screw", "drill", "ruler"]
 
 // console.log(...animals, ...tools) // cat dog hamster crocodile hammer screw drill ruler
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
 
 
 
@@ -1099,6 +1981,29 @@
 
 
 
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
+
+
 // NOTE : Spread operator can be used to create new array (different name) with same element
 
 // Spread operator example 3
@@ -1108,6 +2013,29 @@
 
 // console.log(animalsinside) // ['cat', 'dog', 'rabbit', 'hamster', 'chicken']
 // console.log(...animalsinside) // cat dog rabbit hamster chicken   // "unbox" the array
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
 
 
 
@@ -1133,6 +2061,29 @@
 
 
 
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
 // // Example 1 of rest operator  (single argument)
 
 // function withRest(...a){
@@ -1141,6 +2092,29 @@
 // }
 
 // withRest("apple","ball","cat","dog","elephant") // ['apple', 'ball', 'cat', 'dog', 'elephant']   // "boxed" as array
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -1163,14 +2137,29 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
 
 
 
@@ -1183,6 +2172,29 @@
 //       return array.filter(element => !toRemove.includes(element))
 //     }
 // console.log(removeFromArray([1, 2, 3, 4], 3))
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
 
 
 
@@ -1216,6 +2228,29 @@
 
 
 
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
+
+
+
+
 // Exercise 3
 
 // const leapYears = function(year) {
@@ -1240,6 +2275,29 @@
 
 // year % 100 !== 0  are not leap year unless its year % 400 === 0
  
+
+
+
+
+
+
+
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -1276,14 +2334,24 @@
 
 
 
-// /**
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  * 
-//  */
+
+ 
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 
 
 
@@ -1881,5 +2949,3 @@
 //     console.log(event.key)
 //     console.log(event.code)
 // })
-
-
