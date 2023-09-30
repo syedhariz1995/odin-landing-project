@@ -2976,16 +2976,18 @@
 
 
 
-// Objects     --     syntax :  let user  = {}     or    let user = new Object() 
+// Objects     --     syntax :  let user  = {key:value , key:value}     or    let user = new Object() 
 // Note : if new Object(), insert it by user.name = "hariz", etc
-// Note: inside objects, there's always "keys", such as "name" , "age", etc
+// Note: inside objects, there's always "keys", such as "name" , "age", and each key must have values, even if its null
 
 
 
 // eg1  object literals
 let userOne = {
     name: 'hariz',
-    age: 28
+    age: 28,
+    isAdmin : true,
+    isStudent : false
 }
 
 
@@ -2994,6 +2996,14 @@ let userTwo = new Object();
 
 userTwo.name = "Akmmal"
 userTwo.age = 27
+userTwo.isAdmin = false
 
+console.log(userOne) // {name: 'hariz', age: 28}
+console.log(userTwo) // {name: 'Akmmal', age: 27}
+console.log(userOne.name) // hariz      // access specific properties' value
+
+
+
+// Use delete to remove property
+delete userOne.isStudent
 console.log(userOne)
-console.log(userTwo)
