@@ -2976,4 +2976,24 @@
 
 
 
+// Objects     --     syntax :  let user  = {}     or    let user = new Object() 
+// Note : if new Object(), insert it by user.name = "hariz", etc
+// Note: inside objects, there's always "keys", such as "name" , "age", etc
 
+
+
+// eg1  object literals
+let userOne = {
+    name: 'hariz',
+    age: 28
+}
+
+
+//eg2 object constructor
+let userTwo = new Object();
+
+userTwo.name = "Akmmal"
+userTwo.age = 27
+
+console.log(userOne)
+console.log(userTwo)
