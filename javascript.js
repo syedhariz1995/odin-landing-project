@@ -3071,3 +3071,35 @@
 
 
 
+// Basic functions with objects
+
+// function makeUser(name, age, isStudent){
+//     return {
+//         name: name,
+//         age: age,
+//         isStudent : isStudent
+//     }
+// }
+
+// let userFive = makeUser("Dragonborn", 45, true)
+// console.log(userFive)
+// console.log(userFive.name)
+
+
+
+
+// or
+
+
+
+// function makeUser(name, age, isStudent){
+//     return {
+//         name,       // same as "name : name"
+//         age,        // same as "age : age"
+//         isStudent   // same as "isStudent : isStudent"
+//     }
+// }
+
+// let userSix = makeUser("Viking", 56, false)
+// console.log(userSix)
+// console.log(userSix.name)
