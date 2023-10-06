@@ -3103,3 +3103,171 @@
 // let userSix = makeUser("Viking", 56, false)
 // console.log(userSix)
 // console.log(userSix.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+// under object, property names can be be reserved keywords
+// let obj = {
+//     for: 1,
+//     let: 2,
+//     return: 3
+//   };
+  
+//   console.log( obj.for + obj.let + obj.return );  // 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+
+
+// // Use "in" to check if properties exist in objects. Gives out true or false     --    syntax :  "propertyname" in objName
+// let user = { 
+//     name: "John", 
+//     age: 30 
+// };
+
+// console.log( "age" in user ); // true, user.age exists
+// console.log( "occupation" in user ); // false, user.occupation doesn't exist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+
+// for...in loop
+// Iterate every propertyName inside object.
+// Syntaxt : (Create object with properties inside first)  ->  for (let property in objName){ console.log(property) console.log(objName[property])}
+
+// let userSeven = {
+//     name : "Sharid",
+//     age : 25,
+//     isWorking : true
+// }
+
+// for (let key in userSeven){
+//     console.log(key) // name age isWorking
+//     console.log(userSeven[key]) // Sharid 25 true
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+// if property names are in integer form, the result will be in ascending order
+// but if its not in integer, it'll listed in creation order
+
+let codes = {
+    "49": "Germany",
+    "41": "Switzerland",
+    "44": "Great Britain",
+    "1": "USA"
+  };
+  
+  for (let code in codes) {
+    console.log(code); // 1, 41, 44, 49  
+  }
