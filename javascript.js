@@ -3258,16 +3258,72 @@
 
 
 
+
+
 // if property names are in integer form, the result will be in ascending order
 // but if its not in integer, it'll listed in creation order
+// use a "+" right before the numbers to make it appear in creation order
 
-let codes = {
-    "49": "Germany",
-    "41": "Switzerland",
-    "44": "Great Britain",
-    "1": "USA"
-  };
+// Integers
+// let codes = {
+//     "49": "Germany",
+//     "41": "Switzerland",
+//     "44": "Great Britain",
+//     "1": "USA"
+//   };
   
-  for (let code in codes) {
-    console.log(code); // 1, 41, 44, 49  
-  }
+//   for (let code in codes) {
+//     console.log(code); // 1, 41, 44, 49  // Ascending
+//   }
+
+
+
+
+
+
+
+  // Non-integers
+//   let userEight = {
+//     age: 56,
+//     name: 'Eddard',
+//   };
+
+//   userEight.status = "Not Alive" // add another
+  
+//   for (let props in userEight) {
+//     console.log(props); // age, name, status  // order of creation
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+
+
