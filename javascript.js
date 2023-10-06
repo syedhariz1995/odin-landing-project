@@ -3047,13 +3047,27 @@
 // console.log(userThree[`likes birds`]) // Access multiword properties with square brackets, and properly quoted (single, double, backticks)
 
 
-let user = {
-    name: "John",
-    age: 30,
-    isGreat : true,
-  };
-  
-  let key = prompt("What do you want to know about the user?", "age");
-  
-  // access by variable
-  alert( user[key] ); // John (if enter "name")
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
