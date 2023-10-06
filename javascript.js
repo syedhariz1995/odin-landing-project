@@ -2982,28 +2982,78 @@
 
 
 
-// eg1  object literals
-let userOne = {
-    name: 'hariz',
-    age: 28,
-    isAdmin : true,
-    isStudent : false
-}
+// // eg1  object literals
+// let userOne = {
+//     name: 'hariz',
+//     age: 28,
+//     isAdmin : true,
+//     isStudent : false
+// }
 
 
-//eg2 object constructor
-let userTwo = new Object();
+// //eg2 object constructor
+// let userTwo = new Object();
 
-userTwo.name = "Akmmal"
-userTwo.age = 27
-userTwo.isAdmin = false
+// userTwo.name = "Akmmal"
+// userTwo.age = 27
+// userTwo.isAdmin = false
 
-console.log(userOne) // {name: 'hariz', age: 28}
-console.log(userTwo) // {name: 'Akmmal', age: 27}
-console.log(userOne.name) // hariz      // access specific properties' value
+// console.log(userOne) // {name: 'hariz', age: 28}
+// console.log(userTwo) // {name: 'Akmmal', age: 27}
+// console.log(userOne.name) // hariz      // access specific properties' value
 
 
 
-// Use delete to remove property
-delete userOne.isStudent
-console.log(userOne)
+// // Use delete to remove property
+// delete userOne.isStudent
+// console.log(userOne)
+
+
+
+
+
+
+
+
+
+
+
+// /**
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  * 
+//  */
+
+
+
+
+
+
+
+// // multi word keys need to use quotations
+
+// let userThree = {
+//     name: "John",
+//     age: 30,
+//     "likes birds": true  // multiword property name must be quoted
+//   };
+
+// console.log(userThree)  // {name: 'John', age: 30, likes birds: true}
+// // console.log(userThree.likes birds) // Error. Need to use dquare bracket (can autocomplete properly)
+
+// console.log(userThree[`likes birds`]) // Access multiword properties with square brackets, and properly quoted (single, double, backticks)
+
+
+let user = {
+    name: "John",
+    age: 30,
+    isGreat : true,
+  };
+  
+  let key = prompt("What do you want to know about the user?", "age");
+  
+  // access by variable
+  alert( user[key] ); // John (if enter "name")
