@@ -3346,3 +3346,19 @@ const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick'
 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine',
 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William']
 
+
+// Array filter method
+// 1. Filter the list of iventors for those who're born in the 1500s
+
+// const fifteen = inventors.filter((inventor) => {
+//   return inventor.year >= 1500 && inventor.year <= 1599
+// })
+
+// console.log(fifteen)
+
+
+
+// 2. Give an array of the inventor's first and last name
+
+const firstLastName = []
+
