@@ -3330,21 +3330,21 @@
 // Array methods with objects
 // Practice : use these object arrays
 
-const inventors = [
-  {first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
-  {first: 'Isaac', last: 'Newton', year: 1643, passed: 1727},
-  {first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642},
-  {first: 'Marie', last: 'Curie', year: 1867, passed: 1934},
-  {first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630},
-  {first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543},
-  {first: 'Max', last: 'Planck', year: 1858, passed: 1947},
-]
+// const inventors = [
+//   {first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
+//   {first: 'Isaac', last: 'Newton', year: 1643, passed: 1727},
+//   {first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642},
+//   {first: 'Marie', last: 'Curie', year: 1867, passed: 1934},
+//   {first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630},
+//   {first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543},
+//   {first: 'Max', last: 'Planck', year: 1858, passed: 1947},
+// ]
 
 
 
 
-// Array filter method
-// 1. Filter the list of iventors for those who're born in the 1500s
+// // Array filter method
+// // 1. Filter the list of iventors for those who're born in the 1500s
 
 // const fifteen = inventors.filter((inventor) => {
 //   return inventor.year >= 1500 && inventor.year <= 1599
@@ -3354,18 +3354,18 @@ const inventors = [
 
 
 
-// Array map method
-// 2. Give an array of the inventor's first and last name
+// // Array map method
+// // 2. Give an array of the inventor's first and last name
 
 // const inventorFullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
 // console.log(inventorFullName)
 
 
 
-// Array sort method
-// 3. Sort the inventors by birthdate, oldest to youngest
-// sort() usually have (a,b). a - b for ascending, b - a for descending
-// a and b are first element and second element
+// // Array sort method
+// // 3. Sort the inventors by birthdate, oldest to youngest
+// // sort() usually have (a,b). a - b for ascending, b - a for descending
+// // a and b are first element and second element
 
 // const orderedBirthdate = inventors.sort((a,b) => a.year - b.year)
 
@@ -3373,9 +3373,9 @@ const inventors = [
 
 
 
-// Array reduce method
-// 4. How many years did all the inventors live
-// reduce has (accumulator, currentValue)
+// // Array reduce method
+// // 4. How many years did all the inventors live
+// // reduce has (accumulator, currentValue)
 
 
 // const totalYears = inventors.reduce((total, inventor) => {
@@ -3386,10 +3386,10 @@ const inventors = [
 
 
 
-// 5. Sort the inventors by years lived
-// Note : in sort(), the use of "1" and "-1" is common.
-// if 1 is returned, the current element should come after the other element
-// if -1 returned, current element should come before the other element
+// // 5. Sort the inventors by years lived
+// // Note : in sort(), the use of "1" and "-1" is common.
+// // if 1 is returned, the current element should come after the other element
+// // if -1 returned, current element should come before the other element
 
 // const oldestToYoungest = inventors.sort((a,b) => {
 //   older = a.passed - a.year
@@ -3405,11 +3405,11 @@ const inventors = [
 
 
 
-const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 
-'Bellow, Saul', 'Benchley, Robert', 'Beneson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 
-'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irvin', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
-'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine',
-'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William']
+// const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 
+// 'Bellow, Saul', 'Benchley, Robert', 'Beneson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 
+// 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irvin', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
+// 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine',
+// 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William']
 
 
 // // 6. alphabetical order by firstname
@@ -3427,17 +3427,103 @@ const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick'
 
 
 
-const transports = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck']
+// const transports = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck']
 
 
-// // 7. Count how many times the elements of transports repeated
-const count = transports.reduce((object, transport) => { 
-    if(!object[transport]){
-      object[transport] = 0     // eg: {car : 0}  // object[arrayElement] = 0 another way to push elements from an array into an object
-    }
-    object[transport]++
-    return object
-},{})
+// // // 7. Count how many times the elements of transports repeated
+// const count = transports.reduce((object, transport) => { 
+//     if(!object[transport]){
+//       object[transport] = 0     // eg: {car : 0}  // object[arrayElement] = 0 another way to push elements from an array into an object
+//     }
+//     object[transport]++
+//     return object
+// },{})
 
-console.log(count)
+// console.log(count)
 
+
+
+
+
+
+
+const people = [
+  {name: 'Wes', year: 1988},
+  {name: 'Kait', year: 1986},
+  {name: 'Irv', year: 1970},
+  {name: 'Lux', year: 2015},
+]
+
+
+
+// // 8. Some and Every methods
+// // Note: some() is used to see if at least one of the elements is true
+// // is at least one person 19?
+
+// const someNineteen = people.some(person => {
+//   const currentYear = new Date().getFullYear()
+//   return currentYear - person.year >= 19
+// })
+
+// console.log(someNineteen)
+
+
+
+// // // 9. is everybody 19?
+
+// const allNineteen = people.every(person => {
+//   const currentYear = new Date().getFullYear()
+//   return currentYear - person.year >= 19
+// })
+
+// console.log(allNineteen)
+
+
+
+
+
+
+
+
+
+
+
+const comments = [
+  {text: 'Love this!', id: 523423},
+  {text: 'Super good', id: 823423},
+  {text: 'You are the best', id: 2039842},
+  {text: 'Ramen is my fav food ever', id: 123523},
+  {text: 'Nice Nice Nice!', id: 542328},
+]
+
+
+// // 10. find() method
+// // Note: just like filter(), but returns only the ones we look for
+// // find the comment with the ID : 823423
+
+// const specificId = comments.find(comment => comment.id === 823423)
+
+// console.log(specificId)
+
+
+
+
+
+
+// // 11. findIndex() method
+// // find comment with 823423
+// // delete the comment with the ID of 823423
+
+
+// const specificIndex = comments.findIndex(comment => comment.id === 823423) // shows the index of what was being looked
+
+// comments.splice(specificIndex, 1) // delete from array
+
+// console.log(specificIndex)
+// console.log(comments)
+
+
+const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const removedElements = arr.splice(2, 4, 'A', 'B', 'C');
+console.log(arr); // Output: [0, 1, 'A', 'B', 'C', 6, 7, 8, 9, 10]
+console.log(removedElements); // Output: [2, 3, 4, 5]
