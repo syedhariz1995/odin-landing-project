@@ -3340,11 +3340,7 @@ const inventors = [
   {first: 'Max', last: 'Planck', year: 1858, passed: 1947},
 ]
 
-const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 
-'Bellow, Saul', 'Benchley, Robert', 'Beneson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 
-'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irvin', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
-'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine',
-'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William']
+
 
 
 // Array filter method
@@ -3395,15 +3391,53 @@ const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick'
 // if 1 is returned, the current element should come after the other element
 // if -1 returned, current element should come before the other element
 
-const oldestToYoungest = inventors.sort((a,b) => {
-  const youngestInventor = a.passed - a.year
-  const previousInventor = b.passed - b.year
+// const oldestToYoungest = inventors.sort((a,b) => {
+//   older = a.passed - a.year
+//   youngest = b.passed - b.year
 
-  return previousInventor > youngestInventor? 1 : -1
-})
-
-console.log(oldestToYoungest)
+//   return older > youngest ? 1 : -1
+// })
 
 
 
+// console.log(oldestToYoungest)
+
+
+
+
+const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 
+'Bellow, Saul', 'Benchley, Robert', 'Beneson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 
+'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irvin', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
+'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine',
+'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William']
+
+
+// // 6. alphabetical order by firstname
+// const sortLastName = people.sort((a, b) => {
+//   // Extract last names for comparison
+//   const [lastNameA, firstNameA] = a.split(', ').reverse()
+//   const [lastNameB, firstNameB] = b.split(', ').reverse()
+  
+//   return firstNameA > firstNameB ? 1 : -1
+// });
+
+// console.log(sortLastName)
+
+
+
+
+
+const transports = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck']
+
+
+// // 7. Count how many times the elements of transports repeated
+const count = transports.reduce((object, transport) => { 
+    if(!object[transport]){
+      object[transport] = 0     // eg: {car : 0}  // object[arrayElement] = 0 another way to push elements from an array into an object
+    }
+    object[transport]++
+    return object
+},{})
+
+console.log(count)
 
