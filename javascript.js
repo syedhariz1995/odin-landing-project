@@ -3358,7 +3358,52 @@ const people = ['Beck, Glen', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Wick'
 
 
 
+// Array map method
 // 2. Give an array of the inventor's first and last name
 
-const firstLastName = []
+// const inventorFullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
+// console.log(inventorFullName)
+
+
+
+// Array sort method
+// 3. Sort the inventors by birthdate, oldest to youngest
+// sort() usually have (a,b). a - b for ascending, b - a for descending
+// a and b are first element and second element
+
+// const orderedBirthdate = inventors.sort((a,b) => a.year - b.year)
+
+// console.log(orderedBirthdate)
+
+
+
+// Array reduce method
+// 4. How many years did all the inventors live
+// reduce has (accumulator, currentValue)
+
+
+// const totalYears = inventors.reduce((total, inventor) => {
+//   return total + (inventor.passed - inventor.year)
+// },0) // initial accumulator (total in this case)
+
+// console.log(totalYears)
+
+
+
+// 5. Sort the inventors by years lived
+// Note : in sort(), the use of "1" and "-1" is common.
+// if 1 is returned, the current element should come after the other element
+// if -1 returned, current element should come before the other element
+
+const oldestToYoungest = inventors.sort((a,b) => {
+  const youngestInventor = a.passed - a.year
+  const previousInventor = b.passed - b.year
+
+  return previousInventor > youngestInventor? 1 : -1
+})
+
+console.log(oldestToYoungest)
+
+
+
 
