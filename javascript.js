@@ -2087,7 +2087,7 @@
 // // Example 1 of rest operator  (single argument)
 
 // function withRest(...a){
-//     console.log(a)      // Array created by rest opertor in argument
+//     console.log(a)      // // ["apple","ball","cat","dog","elephant"]   // Array created by rest opertor in argument , aka "boxed" in an array
 //     console.log(...a)   // apple ball cat dog elephant    // "unboxed" the array created (basically spread operator here)
 // }
 
@@ -3497,9 +3497,9 @@ const comments = [
 ]
 
 
-// // 10. find() method
-// // Note: just like filter(), but returns only the ones we look for
-// // find the comment with the ID : 823423
+// 10. find() method
+// Note: just like filter(), but returns only the ones we look for
+// find the comment with the ID : 823423
 
 // const specificId = comments.find(comment => comment.id === 823423)
 
@@ -3517,13 +3517,12 @@ const comments = [
 
 // const specificIndex = comments.findIndex(comment => comment.id === 823423) // shows the index of what was being looked
 
-// comments.splice(specificIndex, 1) // delete from array
+// comments.splice(specificIndex,1) // delete from array
 
 // console.log(specificIndex)
 // console.log(comments)
 
 
-const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const removedElements = arr.splice(2, 4, 'A', 'B', 'C');
-console.log(arr); // Output: [0, 1, 'A', 'B', 'C', 6, 7, 8, 9, 10]
-console.log(removedElements); // Output: [2, 3, 4, 5]
+
+
+
