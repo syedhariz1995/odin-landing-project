@@ -3447,12 +3447,12 @@
 
 
 
-const people = [
-  {name: 'Wes', year: 1988},
-  {name: 'Kait', year: 1986},
-  {name: 'Irv', year: 1970},
-  {name: 'Lux', year: 2015},
-]
+// const people = [
+//   {name: 'Wes', year: 1988},
+//   {name: 'Kait', year: 1986},
+//   {name: 'Irv', year: 1970},
+//   {name: 'Lux', year: 2015},
+// ]
 
 
 
@@ -3488,13 +3488,13 @@ const people = [
 
 
 
-const comments = [
-  {text: 'Love this!', id: 523423},
-  {text: 'Super good', id: 823423},
-  {text: 'You are the best', id: 2039842},
-  {text: 'Ramen is my fav food ever', id: 123523},
-  {text: 'Nice Nice Nice!', id: 542328},
-]
+// const comments = [
+//   {text: 'Love this!', id: 523423},
+//   {text: 'Super good', id: 823423},
+//   {text: 'You are the best', id: 2039842},
+//   {text: 'Ramen is my fav food ever', id: 123523},
+//   {text: 'Nice Nice Nice!', id: 542328},
+// ]
 
 
 // 10. find() method
@@ -3525,20 +3525,131 @@ const comments = [
 
 
 
-const fibonacci = function(num) {
-  if (num < 0 ) return "Positive integer only"
-  if (num === 0) return 0
+// const fibonacci = function(num) {
+//   if (num < 0 ) return "Positive integer only"
+//   if (num === 0) return 0
 
- let first = 1;
- let second = 0;
+//  let first = 1;
+//  let second = 0;
 
- for (i = 2; i <= num; i++){
-  let current = first + second
-  second = first
-  first = current
- }
- return first
+//  for (i = 2; i <= num; i++){
+//   let current = first + second
+//   second = first
+//   first = current
+//  }
+//  return first
+// }
+
+
+// console.log(fibonacci(4))
+// console.log(fibonacci(6))
+// console.log(fibonacci(10))
+// console.log(fibonacci(15))
+// console.log(fibonacci(25))
+// console.log(fibonacci(-25))
+// console.log(fibonacci("1"))
+// console.log(fibonacci("2"))
+// console.log(fibonacci("8"))
+
+
+
+
+
+// const books = [
+//   {
+//     title: 'Book',
+//     author: 'Name'
+//   },
+//   {
+//     title: 'Book2',
+//     author: 'Name2'
+//   }
+// ]
+
+
+// const getTheTitles = function(books) {
+//   return books.map(book => book.title)
+// };
+
+// console.log(getTheTitles(books))
+
+
+
+
+
+
+
+const people = [
+  {
+    name: "Carly",
+    yearOfBirth: 1942,
+    yearOfDeath: 1970,
+  },
+  {
+    name: "Ray",
+    yearOfBirth: 1962,
+    yearOfDeath: 2011,
+  },
+  {
+    name: "Jane",
+    yearOfBirth: 1912,
+    yearOfDeath: 1941,
+  },
+]
+
+const peopleTwo = [
+  {
+    name: "Carly",
+    yearOfBirth: 2018,
+  },
+  {
+    name: "Ray",
+    yearOfBirth: 1962,
+    yearOfDeath: 2011,
+  },
+  {
+    name: "Jane",
+    yearOfBirth: 1912,
+    yearOfDeath: 1941,
+  },
+]
+
+const peopleThree = [
+  {
+    name: "Carly",
+    yearOfBirth: 1066,
+  },
+  {
+    name: "Ray",
+    yearOfBirth: 1962,
+    yearOfDeath: 2011,
+  },
+  {
+    name: "Jane",
+    yearOfBirth: 1912,
+    yearOfDeath: 1941,
+  },
+]
+
+
+const findTheOldest = function (people){
+  return people.reduce((oldest, current) => {
+    const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath)
+    const currentAge = getAge(current.yearOfBirth, current.yearOfDeath)
+    
+    return oldestAge < currentAge ? current : oldest
+  })
+  
+}
+
+const getAge = (birth, death) => {
+  if(!death){
+    death = new Date().getFullYear()
+  }
+  return death - birth
 }
 
 
-console.log(fibonacci(4))
+console.log(findTheOldest(people))
+console.log(findTheOldest(peopleTwo))
+console.log(findTheOldest(peopleThree))
